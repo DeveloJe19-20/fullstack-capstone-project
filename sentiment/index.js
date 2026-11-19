@@ -41,7 +41,7 @@ app.post('/sentiment', async (req, res) => {
         if (analysisResult < 0) {
             sentiment = "negative";
         }
-        else if (analysisResult >= 0  && analysisResult < 0.33){
+        else if (analysisResult >= 0  && analysisResult <= 0.33){
             sentiment = "neutral"
         }
         else {
